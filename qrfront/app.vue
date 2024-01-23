@@ -3,9 +3,9 @@ import { QrcodeStream, QrcodeDropZone, QrcodeCapture } from 'vue-qrcode-reader';
 const value = ref();
 const isQrcode = ref(false);
 
-const onDetect = (content) => {
-  value.value = content[0].rawValue;
-};
+// const onDetect = (content) => {
+//   value.value = content[0].rawValue;
+// };
 
 const handleButton = (content) => {
   isQrcode.value = !isQrcode.value;
@@ -16,18 +16,18 @@ const handleButton = (content) => {
     <h1>QRcode Reader test</h1>
     <h2>QRcodeの値：{{ value }}</h2>
     <button @click="handleButton">QRcode読み取り</button>
-    <div v-if="isQrcode" class="qr">
+    <!-- <div v-if="isQrcode" class="qr">
       <qrcode-stream @detect="onDetect"></qrcode-stream>
-    </div>
+    </div> -->
     <!-- <div>
       <qrcode-drop-zone @detect="onDetect" class="drop"
         >ドラッグ&ドロップ</qrcode-drop-zone
       >
     </div> -->
 
-    <div class="capture">
+    <!-- <div class="capture">
       <qrcode-capture @detect="onDetect"></qrcode-capture>
-    </div>
+    </div> -->
   </div>
 </template>
 
