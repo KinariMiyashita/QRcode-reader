@@ -1,5 +1,5 @@
 <script setup>
-import { QrcodeStream, QrcodeDropZone, QrcodeCapture } from 'vue-qrcode-reader';
+// import { QrcodeStream, QrcodeDropZone, QrcodeCapture } from 'vue-qrcode-reader';
 const value = ref();
 const isQrcode = ref(false);
 
