@@ -25,9 +25,9 @@ const handleButton = (content) => {
       >
     </div> -->
 
-    <!-- <div class="capture">
+    <div class="capture">
       <qrcode-capture @detect="onDetect"></qrcode-capture>
-    </div> -->
+    </div>
   </div>
 </template>
 
